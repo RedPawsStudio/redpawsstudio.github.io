@@ -4,15 +4,14 @@ Le site de RedPaws Studio, un studio indépendant d'une seule personne, et de so
 (bientôt sur Steam). Mascotte : **Rouxy**, panda roux non binaire.
 
 Site statique : `index.html`, `styles.css`, `script.js` et des images. Pas de framework, pas d'installation,
-pas d'étape de construction. Adresse prévue : `https://redpawsstudio.github.io/`.
+pas d'étape de construction. En ligne sur **https://redpawsstudio.github.io/** (GitHub Pages).
 
 ## Où on en est
 
 - [x] Site terminé, vérifié sur ordinateur et téléphone
-- [x] Dépôt GitHub créé, **privé**, sur le compte personnel : `SebGamblin/redpawsstudio.github.io`
-- [ ] Créer l'adresse Gmail `redpawsstudio@gmail.com` (déjà affichée sur le site)
-- [ ] Créer le compte Instagram `@redpawsstudio` (déjà relié au site)
-- [ ] Créer l'organisation GitHub **RedPawsStudio**, y transférer le dépôt, le passer en public, activer Pages
+- [x] Dépôt public dans l'organisation : `RedPawsStudio/redpawsstudio.github.io`, GitHub Pages activé
+- [ ] **Urgent** : créer l'adresse Gmail `redpawsstudio@gmail.com`, déjà affichée sur le site en ligne
+- [ ] Créer le compte Instagram `@redpawsstudio`, déjà relié au site
 - [ ] Ouvrir la page Steam d'Hexplore (« Coming soon ») et coller son adresse dans `script.js`
 
 ## Ce que contient la page
@@ -69,18 +68,11 @@ au même nom les rendrait plus nettes. Pour remplacer une image : mettre le nouv
 puis le convertir en WebP au même nom dans `assets/img/` (ou demander à Claude). Si c'est `hero`, refaire
 aussi `partage.jpg`.
 
-## Mettre en ligne
+## Publier une modification
 
-1. Créer l'organisation **RedPawsStudio** sur GitHub (offre gratuite).
-2. Dans le dépôt : Settings → General → *Danger Zone* → **Transfer ownership** → `RedPawsStudio`,
-   en gardant le nom `redpawsstudio.github.io` (c'est ce nom qui donne l'adresse courte).
-3. Au même endroit, **Change visibility** → Public : GitHub Pages gratuit exige un dépôt public.
-4. Settings → **Pages** → *Deploy from a branch*, branche `main`, dossier `/ (root)`.
-5. Une ou deux minutes plus tard, le site est en ligne sur `https://redpawsstudio.github.io/`.
-6. En local, pointer vers le nouveau dépôt (GitHub redirige l'ancien, mais autant être propre) :
-   ```powershell
-   git remote set-url origin https://github.com/RedPawsStudio/redpawsstudio.github.io.git
-   ```
+Le site se publie tout seul : chaque envoi (`git push`) sur la branche `main` de
+`RedPawsStudio/redpawsstudio.github.io` met le site à jour en une ou deux minutes. Réglage côté GitHub :
+Settings → Pages → *Deploy from a branch*, `main`, `/ (root)`.
 
 Ensuite, cette adresse va dans Steamworks (site web du développeur) et dans la bio Instagram. Si un nom de
 domaine est acheté un jour, mettre à jour `og:url` et `og:image` dans `index.html`.
