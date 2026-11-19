@@ -8,7 +8,7 @@
 const LIENS = {
   steam: "",                                          // ex. "https://store.steampowered.com/app/1234560/Hexplore/"
   instagram: "https://www.instagram.com/redpawsstudio/",
-  email: "redpawsstudio@gmail.com",                   // À CRÉER : si elle est déjà prise chez Gmail, mettre la vraie ici
+  email: "",                                          // prévue : "redpawsstudio@gmail.com", à remettre une fois le compte validé
 };
 
 (function () {
