@@ -8,7 +8,7 @@
 const LIENS = {
   steam: "",                                          // ex. "https://store.steampowered.com/app/1234560/Hexplore/"
   instagram: "https://www.instagram.com/redpawsstudio/",
-  email: "",                                          // ex. "redpawsstudio@gmail.com"
+  email: "redpawsstudio@gmail.com",                   // À CRÉER : si elle est déjà prise chez Gmail, mettre la vraie ici
 };
 
 (function () {
@@ -26,7 +26,11 @@ const LIENS = {
       if (!LIENS.email) { el.hidden = true; return; }
       el.href = "mailto:" + LIENS.email;
       const t = el.querySelector('[data-text="email"]');
-      if (t) t.textContent = LIENS.email;
+      if (t) {                                      // coupure possible juste après le @ (petits écrans)
+        const [nom, domaine] = LIENS.email.split("@");
+        t.replaceChildren(nom + "@", document.createElement("wbr"), domaine || "");
+        t.classList.add("card__title--mail");
+      }
     } else if (kind === "steam") {
       if (LIENS.steam) {
         el.href = LIENS.steam; el.target = "_blank"; el.rel = "noopener";
@@ -37,7 +41,10 @@ const LIENS = {
         el.href = LIENS.instagram || "#suivre";
         if (LIENS.instagram) { el.target = "_blank"; el.rel = "noopener"; }
         const label = el.querySelector("[data-label]");
-        if (label && el.dataset.soon) label.textContent = el.dataset.soon;
+        if (label && el.dataset.soon) {
+          label.textContent = el.dataset.soon;                                   // le texte…
+          el.querySelector("svg use")?.setAttribute("href", "#i-instagram");     // …et le logo suivent
+        }
         const soon = el.querySelector("[data-soon-label]");
         if (soon) soon.textContent = "Page à venir : suivre sur Instagram";
       }
