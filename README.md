@@ -16,15 +16,19 @@ Tout est en haut de `script.js`, dans `LIENS` :
 
 ## Mettre en ligne sur GitHub Pages
 
-1. Sur GitHub, dans l'organisation **RedPawsStudio**, créer un dépôt public nommé exactement
-   `redpawsstudio.github.io` (sans README).
-2. Pousser ce dossier :
+Le dépôt existe déjà sur le compte personnel, en privé : `SebGamblin/redpawsstudio.github.io`.
+
+1. Créer l'organisation **RedPawsStudio** sur GitHub (offre gratuite).
+2. Dépôt → Settings → General → Danger Zone → **Transfer ownership** → organisation `RedPawsStudio`,
+   en gardant le nom `redpawsstudio.github.io`.
+3. Dans l'organisation : Settings → General → Danger Zone → **Change visibility** → Public
+   (GitHub Pages gratuit exige un dépôt public).
+4. Settings → Pages : « Deploy from a branch », branche `main`, dossier `/ (root)`.
+5. Le site est en ligne sur `https://redpawsstudio.github.io/` en une ou deux minutes.
+6. En local, pointer vers le nouveau dépôt (GitHub redirige l'ancien, mais autant être propre) :
    ```powershell
-   git remote add origin https://github.com/RedPawsStudio/redpawsstudio.github.io.git
-   git push -u origin main
+   git remote set-url origin https://github.com/RedPawsStudio/redpawsstudio.github.io.git
    ```
-3. Dépôt → Settings → Pages : « Deploy from a branch », branche `main`, dossier `/ (root)`.
-4. Le site est en ligne sur `https://redpawsstudio.github.io/` en une ou deux minutes.
 
 Ce lien peut ensuite être donné à Steamworks (site web du développeur), dans la bio Instagram, etc.
 Si un nom de domaine est acheté plus tard, mettre à jour `og:url` et `og:image` dans `index.html`.
