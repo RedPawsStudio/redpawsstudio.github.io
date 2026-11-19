@@ -188,11 +188,9 @@ h1, h2, h3, p, ul, figure { margin: 0; }
 }
 .studio__copy p { margin-top: 18px; color: var(--muted); }
 .studio__copy .title + p { margin-top: 30px; color: var(--cream); font-size: 19px; font-weight: 600; }
-.studio__faces {
-  margin-top: 30px; width: 100%; max-width: 480px;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-}
+.studio__faces { display: flex; align-items: flex-end; gap: clamp(8px, 2vw, 20px); margin-top: 30px; max-width: 500px; }
+.studio__faces img { flex: 1 1 0; min-width: 0; filter: drop-shadow(0 8px 14px rgba(0, 0, 0, .45)); transition: transform .3s cubic-bezier(.3, 1.6, .5, 1); }
+.studio__faces img:hover { transform: translateY(-6px) scale(1.04); }
 
 /* ---------- 4. Suivre ---------- */
 .follow { position: relative; padding: clamp(72px, 10vw, 120px) 0; isolation: isolate; overflow: hidden; }
