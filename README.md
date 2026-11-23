@@ -27,7 +27,7 @@ pas d'étape de construction. En ligne sur **https://redpawsstudio.github.io/** 
 
 | Je veux changer… | Fichier |
 | --- | --- |
-| Un lien (Steam, Instagram, Gmail) | `script.js`, l'objet `LIENS` tout en haut (voir plus bas) |
+| Un lien (Steam, Instagram, e-mail) | `script.js`, l'objet `LIENS` tout en haut (voir plus bas) |
 | Un texte | `index.html` (anglais) **et** `fr/index.html` (français) : toujours modifier les deux ; chaque section est annoncée par un commentaire `<!-- 1. Accueil -->`, etc. |
 | Un texte « bientôt » du bouton Steam | l'attribut `data-soon` dans chaque page (le script le lit dans la langue de la page) |
 | Une couleur, une police | `styles.css`, les variables de `:root` tout en haut |
