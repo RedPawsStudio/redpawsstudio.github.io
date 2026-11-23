@@ -4,12 +4,12 @@
    - steam     : l'URL de la page Steam d'Hexplore (vide tant qu'elle
                  n'existe pas : les boutons Steam mènent alors à Instagram).
    - instagram : le compte (le pseudo affiché en est déduit).
-   - email     : l'adresse Gmail de contact (vide : la carte disparaît).
+   - email     : l'adresse de contact (vide : la carte disparaît).
    =================================================================== */
 const LIENS = {
   steam: "",                                          // ex. "https://store.steampowered.com/app/1234560/Hexplore/"
   instagram: "https://www.instagram.com/redpawsstudio/",
-  email: "",                                          // prévue : "redpawsstudio@gmail.com", à remettre une fois le compte validé
+  email: "redpawsstudio@proton.me",                   // adresse Proton Mail du studio (23/11/2026)
 };
 
 (function () {

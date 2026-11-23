@@ -9,11 +9,10 @@ pas d'étape de construction. En ligne sur **https://redpawsstudio.github.io/** 
 
 ## Où on en est
 
-- [x] Site terminé, vérifié sur ordinateur et téléphone
+- [x] Site terminé, vérifié sur ordinateur et téléphone, en anglais (racine) et en français (`/fr/`)
 - [x] Dépôt public dans l'organisation : `RedPawsStudio/redpawsstudio.github.io`, GitHub Pages activé
 - [x] Compte Instagram `@redpawsstudio` créé, relié au site
-- [ ] Valider l'adresse Gmail `redpawsstudio@gmail.com` (bloquée : numéro de téléphone déjà utilisé), puis la
-      remettre dans `script.js` ; d'ici là, la carte Contact est masquée
+- [x] Adresse de contact : `redpawsstudio@proton.me`
 - [ ] Ouvrir la page Steam d'Hexplore (« Coming soon ») et coller son adresse dans `script.js`
 
 ## Ce que contient la page
@@ -50,7 +49,7 @@ En haut de `script.js` :
 | --- | --- | --- |
 | `steam` | vide | Tant que c'est vide, le bouton d'Hexplore affiche le logo Instagram, « Suivre le développement » et mène à Instagram. Une fois l'adresse Steam collée, il redevient tout seul « Ajouter à ma liste de souhaits », avec le logo Steam. |
 | `instagram` | `https://www.instagram.com/redpawsstudio/` | Le pseudo affiché (`@redpawsstudio`) est déduit de l'adresse. |
-| `email` | vide (prévue : `redpawsstudio@gmail.com`) | Vide, la carte Contact est masquée. Une fois le compte Gmail validé, mettre l'adresse ici : la carte réapparaît. |
+| `email` | `redpawsstudio@proton.me` | Adresse Proton Mail du studio. Vide, la carte Contact disparaît. |
 
 ## Images
 
