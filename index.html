@@ -1,24 +1,30 @@
 <!doctype html>
-<html lang="fr" data-type="software">
+<html lang="en" data-type="software">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RedPaws Studio · Petites pattes, grandes aventures</title>
-  <meta name="description" content="RedPaws Studio, studio indépendant d'une seule personne : des jeux d'aventure, de récit et de stratégie faits avec soin. Premier jeu : Hexplore, bientôt sur Steam.">
+  <title>RedPaws Studio · Small paws, big adventures</title>
+  <meta name="description" content="RedPaws Studio is a one-person indie studio making adventure, story and strategy games with care. First game: Hexplore, coming soon to Steam.">
   <meta name="page-type" content="software">
   <meta name="site-kind" content="gaming">
   <meta name="theme-color" content="#1a1415">
   <meta name="color-scheme" content="dark">
 
-  <!-- Partage (Discord, Instagram, X…) : remplacer l'URL quand le domaine sera connu -->
+  <!-- Partage (Discord, Instagram, X…) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="RedPaws Studio">
-  <meta property="og:title" content="RedPaws Studio · Petites pattes, grandes aventures">
-  <meta property="og:description" content="Des jeux d'aventure, de récit et de stratégie faits avec soin. Premier jeu : Hexplore, bientôt sur Steam.">
+  <meta property="og:title" content="RedPaws Studio · Small paws, big adventures">
+  <meta property="og:description" content="Adventure, story and strategy games made with care. First game: Hexplore, coming soon to Steam.">
   <meta property="og:image" content="https://redpawsstudio.github.io/assets/img/partage.jpg">
   <meta property="og:url" content="https://redpawsstudio.github.io/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
   <meta name="twitter:card" content="summary_large_image">
 
+  <link rel="canonical" href="https://redpawsstudio.github.io/">
+  <link rel="alternate" hreflang="en" href="https://redpawsstudio.github.io/">
+  <link rel="alternate" hreflang="fr" href="https://redpawsstudio.github.io/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://redpawsstudio.github.io/">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +34,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip" href="#contenu">Aller au contenu</a>
+  <a class="skip" href="#content">Skip to content</a>
 
   <!-- Icônes : pattes pixel, réseaux (Simple Icons, CC0) -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -44,27 +50,28 @@
 
   <header class="top" data-top>
     <div class="wrap top__in">
-      <a class="top__brand" href="#accueil" aria-label="RedPaws Studio, retour en haut">
+      <a class="top__brand" href="#home" aria-label="RedPaws Studio, back to top">
         <img src="assets/img/logo-nav.webp" alt="" width="599" height="423">
       </a>
       <button class="top__toggle" type="button" aria-expanded="false" aria-controls="menu" data-toggle>
         <span class="sr">Menu</span><i></i><i></i><i></i>
       </button>
-      <nav class="top__nav" id="menu" aria-label="Navigation principale">
+      <nav class="top__nav" id="menu" aria-label="Main navigation">
         <a href="#hexplore">Hexplore</a>
-        <a href="#studio">Le studio</a>
-        <a href="#suivre">Suivre</a>
+        <a href="#studio">The studio</a>
+        <a href="#follow">Follow</a>
         <span class="top__social">
-          <a class="icon-link" data-link="instagram" href="#suivre" aria-label="Instagram de RedPaws Studio"><svg><use href="#i-instagram"/></svg></a>
-          <a class="icon-link" data-link="steam" href="#hexplore" aria-label="Hexplore sur Steam"><svg><use href="#i-steam"/></svg></a>
+          <a class="icon-link" data-link="instagram" href="#follow" aria-label="RedPaws Studio on Instagram"><svg><use href="#i-instagram"/></svg></a>
+          <a class="icon-link" data-link="steam" href="#hexplore" aria-label="Hexplore on Steam"><svg><use href="#i-steam"/></svg></a>
         </span>
+        <a class="top__lang" href="fr/" hreflang="fr" lang="fr" aria-label="Version française">FR</a>
       </nav>
     </div>
   </header>
 
-  <main id="contenu">
+  <main id="content">
     <!-- 1. Accueil -->
-    <section class="hero" id="accueil" data-enter>
+    <section class="hero" id="home" data-enter>
       <div class="hero__art" aria-hidden="true">
         <img src="assets/img/hero.webp" alt="" width="1395" height="1127" fetchpriority="high">
       </div>
@@ -72,27 +79,27 @@
         <div class="hero__copy">
           <h1 class="hero__logo"><img src="assets/img/logo.webp" alt="RedPaws Studio" width="1034" height="763"></h1>
           <div class="divider" aria-hidden="true"><span></span><svg><use href="#i-paw"/></svg><span></span></div>
-          <p class="hero__tagline">Petites pattes, grandes aventures.</p>
-          <p class="hero__lead">Un développeur, ses soirées, ses week-ends, et l'envie de partager des jeux d'aventure et de stratégie faits avec soin.</p>
+          <p class="hero__tagline">Small paws, big adventures.</p>
+          <p class="hero__lead">One developer, a lot of evenings and weekends, and a wish to share adventure and strategy games made with care.</p>
           <div class="hero__actions">
-            <a class="btn btn--red" href="#hexplore">Découvrir Hexplore <svg><use href="#i-arrow"/></svg></a>
-            <a class="btn btn--ghost" data-link="instagram" href="#suivre"><svg><use href="#i-instagram"/></svg> Suivre sur Instagram</a>
+            <a class="btn btn--red" href="#hexplore">Discover Hexplore <svg><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--ghost" data-link="instagram" href="#follow"><svg><use href="#i-instagram"/></svg> Follow on Instagram</a>
           </div>
-          <p class="hero__fact"><span class="px">Premier jeu</span> Hexplore, bientôt sur Steam</p>
+          <p class="hero__fact"><span class="px">First game</span> Hexplore, coming soon to Steam</p>
         </div>
       </div>
-      <ul class="wrap pillars" aria-label="Ce que fait le studio">
+      <ul class="wrap pillars" aria-label="What the studio makes">
         <li>
           <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 14h20a10 10 0 0 1 10 10v2a9 9 0 0 1-16 5.6l-1.2-1.6h-5.6L20 31.6A9 9 0 0 1 4 26v-2a10 10 0 0 1 10-10z" fill="currentColor"/><path d="M14 20v8M10 24h8" stroke="#1a1415" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="22" r="2.2" fill="#1a1415"/><circle cx="37" cy="27" r="2.2" fill="#1a1415"/></svg>
-          <span>Jeux narratifs <br>et d'aventure</span>
+          <span>Story-driven <br>adventure games</span>
         </li>
         <li>
           <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="4"/><path d="m31 17-4.5 9.5L17 31l4.5-9.5z" fill="currentColor"/></svg>
-          <span>Gestion et stratégie, <br>avec une âme d'aventure</span>
+          <span>Management and strategy, <br>with an adventurous soul</span>
         </li>
         <li>
           <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 41S6 30.5 6 18.5A9.5 9.5 0 0 1 24 13a9.5 9.5 0 0 1 18 5.5C42 30.5 24 41 24 41z" fill="currentColor"/></svg>
-          <span>Créé sur mon temps libre, <br>par pure passion</span>
+          <span>Made in my spare time, <br>out of pure passion</span>
         </li>
       </ul>
     </section>
@@ -100,35 +107,35 @@
     <!-- 2. Hexplore -->
     <section class="game" id="hexplore">
       <div class="wrap">
-        <h2 class="title"><svg aria-hidden="true"><use href="#i-paw"/></svg> Le premier jeu</h2>
+        <h2 class="title"><svg aria-hidden="true"><use href="#i-paw"/></svg> The first game</h2>
         <div class="game__grid">
           <div class="game__copy">
-            <p class="badge"><span class="badge__dot"></span>Bientôt sur Steam</p>
+            <p class="badge"><span class="badge__dot"></span>Coming soon to Steam</p>
             <h3 class="game__name">Hexplore</h3>
-            <p class="game__genre">Tactique au tour par tour sur hexagones · roguelike</p>
-            <p class="game__pitch">On pose de la lave, on pousse l'ennemi dedans, on gèle, on fait exploser. Dans Hexplore, on fabrique le terrain par l'alchimie, puis on s'en sert contre ses adversaires.</p>
+            <p class="game__genre">Turn-based hex tactics · roguelike</p>
+            <p class="game__pitch">Lay down lava, push the enemy in, freeze it, blow it up. In Hexplore, you craft the battlefield with alchemy, then turn it against your foes.</p>
             <ul class="paws">
-              <li><svg aria-hidden="true"><use href="#i-paw"/></svg>Aucun hasard côté joueur : chaque tour est une petite énigme.</li>
-              <li><svg aria-hidden="true"><use href="#i-paw"/></svg>Une partie de 45 minutes, dix étages, et une histoire qui avance même quand on perd.</li>
-              <li><svg aria-hidden="true"><use href="#i-paw"/></svg>Des créatures plus maladroites que méchantes, et des héros qui se chambrent.</li>
+              <li><svg aria-hidden="true"><use href="#i-paw"/></svg>No luck on your side: every turn is a little puzzle.</li>
+              <li><svg aria-hidden="true"><use href="#i-paw"/></svg>45-minute runs, ten floors, and a story that moves on even when you lose.</li>
+              <li><svg aria-hidden="true"><use href="#i-paw"/></svg>Creatures more clumsy than evil, and heroes who tease each other.</li>
             </ul>
             <div class="game__actions">
-              <!-- Bouton Steam, écrit pour le jour où la page Steam existe (logo Steam, « liste de souhaits »).
+              <!-- Bouton Steam, écrit pour le jour où la page Steam existe (logo Steam, « Wishlist on Steam »).
                    Tant que LIENS.steam est vide dans script.js, le script le transforme au chargement :
-                   lien vers Instagram, logo Instagram, et le texte de data-soon (« Suivre le développement »). -->
-              <a class="btn btn--red" data-link="steam" data-soon="Suivre le développement" href="#suivre"><svg><use href="#i-steam"/></svg> <span data-label>Ajouter à ma liste de souhaits</span></a>
+                   lien vers Instagram, logo Instagram, et le texte de data-soon (« Follow development »). -->
+              <a class="btn btn--red" data-link="steam" data-soon="Follow development" href="#follow"><svg><use href="#i-steam"/></svg> <span data-label>Wishlist on Steam</span></a>
             </div>
             <div class="loading" aria-hidden="true">
               <div class="loading__bar"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-              <span class="px">Développement en cours…</span>
+              <span class="px">Work in progress…</span>
             </div>
           </div>
           <div class="game__media">
             <figure class="shot shot--main">
-              <img src="assets/img/hexplore-combat.webp" alt="Un combat d'Hexplore : le héros face à des créatures sur une île d'hexagones, avec de la lave et de l'eau posées sur le terrain" width="1600" height="933" loading="lazy">
+              <img src="assets/img/hexplore-combat-en.webp" alt="A Hexplore battle: the hero faces creatures on a hexagonal island dotted with trees, water and brambles" width="1600" height="933" loading="lazy">
             </figure>
             <figure class="shot shot--side">
-              <img src="assets/img/hexplore-ile.webp" alt="La carte d'une île d'Hexplore, explorée case par case, la brume recouvrant les lieux encore inconnus" width="1400" height="963" loading="lazy">
+              <img src="assets/img/hexplore-ile-en.webp" alt="A Hexplore island map, explored tile by tile, with fog hiding the places not yet discovered" width="1400" height="963" loading="lazy">
             </figure>
           </div>
         </div>
@@ -139,49 +146,49 @@
     <section class="studio" id="studio">
       <div class="wrap studio__grid">
         <div class="studio__art">
-          <img src="assets/img/mascotte.webp" alt="Rouxy, la mascotte de RedPaws Studio : un panda roux en sweat à capuche noir, assis, le sourire jusqu'aux oreilles" width="1100" height="920" loading="lazy">
+          <img src="assets/img/mascotte.webp" alt="Rouxy, the RedPaws Studio mascot: a red panda in a black hoodie, sitting, grinning from ear to ear" width="1100" height="920" loading="lazy">
         </div>
         <div class="studio__copy">
-          <h2 class="title"><svg aria-hidden="true"><use href="#i-paw"/></svg> Qui se cache sous les pattes ?</h2>
-          <p>RedPaws Studio, c'est une seule personne. Le jour, un autre métier ; le soir et le week-end, des jeux vidéo.</p>
-          <p>J'en joue depuis toujours et j'ai envie de partager ce plaisir : des mondes chaleureux, des personnages expressifs, des règles qu'on comprend en une phrase et qu'on creuse pendant des heures.</p>
-          <p>Et le panda roux ? C'est Rouxy, la mascotte : de la curiosité à revendre, un brin de maladresse et toujours l'envie d'explorer. Un peu le programme du studio.</p>
+          <h2 class="title"><svg aria-hidden="true"><use href="#i-paw"/></svg> Who’s behind the paws?</h2>
+          <p>RedPaws Studio is just one person. A day job by day; video games in the evenings and on weekends.</p>
+          <p>I’ve played games all my life and I want to share that joy: warm worlds, expressive characters, and rules you get in one sentence and dig into for hours.</p>
+          <p>And the red panda? That’s Rouxy, the mascot: endlessly curious, a little clumsy, always ready to explore. Pretty much the studio’s motto.</p>
           <div class="studio__faces">
-            <img src="assets/img/mascotte-rire.webp" alt="Rouxy éclate de rire" width="529" height="435" loading="lazy">
-            <img src="assets/img/mascotte-malice.webp" alt="Rouxy, le regard plein de malice" width="458" height="420" loading="lazy">
-            <img src="assets/img/mascotte-surprise.webp" alt="Rouxy, les yeux ronds de surprise" width="476" height="429" loading="lazy">
+            <img src="assets/img/mascotte-rire.webp" alt="Rouxy bursts out laughing" width="529" height="435" loading="lazy">
+            <img src="assets/img/mascotte-malice.webp" alt="Rouxy with a mischievous look" width="458" height="420" loading="lazy">
+            <img src="assets/img/mascotte-surprise.webp" alt="Rouxy, wide-eyed with surprise" width="476" height="429" loading="lazy">
           </div>
         </div>
       </div>
     </section>
 
     <!-- 4. Suivre et contact -->
-    <section class="follow" id="suivre">
+    <section class="follow" id="follow">
       <div class="follow__bg" aria-hidden="true"><img src="assets/img/panorama.webp" alt="" width="1095" height="753" loading="lazy"></div>
       <div class="wrap">
-        <h2 class="title"><svg aria-hidden="true"><use href="#i-paw"/></svg> Suivre l'aventure</h2>
-        <p class="follow__lead">Coulisses, essais ratés, petites victoires : le développement se raconte au fil de l'eau.</p>
+        <h2 class="title"><svg aria-hidden="true"><use href="#i-paw"/></svg> Follow the adventure</h2>
+        <p class="follow__lead">Behind the scenes, failed attempts, small wins: the making of the game, as it happens.</p>
         <div class="cards">
-          <a class="card" data-link="instagram" href="#suivre">
+          <a class="card" data-link="instagram" href="#follow">
             <span class="card__icon"><svg><use href="#i-instagram"/></svg></span>
             <span class="card__kicker px">Instagram</span>
             <span class="card__title" data-text="instagram-handle">@redpawsstudio</span>
-            <span class="card__text">Des combos en vidéo, des croquis et l'avancée de la semaine.</span>
-            <span class="card__go">Voir le compte <svg><use href="#i-arrow"/></svg></span>
+            <span class="card__text">Combo videos, sketches and the week’s progress.</span>
+            <span class="card__go">See the account <svg><use href="#i-arrow"/></svg></span>
           </a>
           <a class="card" data-link="steam" data-soon-card href="#hexplore">
             <span class="card__icon"><svg><use href="#i-steam"/></svg></span>
             <span class="card__kicker px">Steam</span>
             <span class="card__title">Hexplore</span>
-            <span class="card__text">Ajoutez-le à votre liste de souhaits : Steam vous préviendra le jour de la sortie.</span>
-            <span class="card__go"><span data-soon-label>Ouvrir la page Steam</span> <svg><use href="#i-arrow"/></svg></span>
+            <span class="card__text">Add it to your wishlist: Steam will let you know on launch day.</span>
+            <span class="card__go"><span data-soon-label data-soon="Page coming soon: follow on Instagram">Open the Steam page</span> <svg><use href="#i-arrow"/></svg></span>
           </a>
-          <a class="card" data-link="email" href="#suivre">
+          <a class="card" data-link="email" href="#follow">
             <span class="card__icon"><svg><use href="#i-mail"/></svg></span>
             <span class="card__kicker px">Contact</span>
-            <span class="card__title" data-text="email">Écrire au studio</span>
-            <span class="card__text">Une question, un retour de test, une idée : je lis tout et je réponds, parfois avec un peu de retard.</span>
-            <span class="card__go">Envoyer un message <svg><use href="#i-arrow"/></svg></span>
+            <span class="card__title" data-text="email">Write to the studio</span>
+            <span class="card__text">A question, playtest feedback, an idea: I read everything and reply, sometimes a little late.</span>
+            <span class="card__go">Send a message <svg><use href="#i-arrow"/></svg></span>
           </a>
         </div>
       </div>
@@ -190,12 +197,12 @@
 
   <footer class="foot">
     <div class="wrap foot__in">
-      <a class="foot__brand" href="#accueil" aria-label="RedPaws Studio, retour en haut"><img src="assets/img/logo-nav.webp" alt="" width="599" height="423" loading="lazy"></a>
-      <nav class="foot__nav" aria-label="Pied de page">
-        <a href="#hexplore">Hexplore</a><a href="#studio">Le studio</a><a href="#suivre">Contact</a>
+      <a class="foot__brand" href="#home" aria-label="RedPaws Studio, back to top"><img src="assets/img/logo-nav.webp" alt="" width="599" height="423" loading="lazy"></a>
+      <nav class="foot__nav" aria-label="Footer">
+        <a href="#hexplore">Hexplore</a><a href="#studio">The studio</a><a href="#follow">Contact</a>
       </nav>
-      <p class="foot__motto">Petites pattes, grandes aventures. <svg aria-hidden="true"><use href="#i-paw"/></svg></p>
-      <p class="foot__legal">© <span data-year>2026</span> RedPaws Studio · Hexplore utilise le pack Tiny Swords de Pixel Frog.</p>
+      <p class="foot__motto">Small paws, big adventures. <svg aria-hidden="true"><use href="#i-paw"/></svg></p>
+      <p class="foot__legal">© <span data-year>2026</span> RedPaws Studio · Hexplore uses the Tiny Swords pack by Pixel Frog.</p>
     </div>
   </footer>
 

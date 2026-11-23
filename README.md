@@ -3,7 +3,8 @@
 Le site de RedPaws Studio, un studio indépendant d'une seule personne, et de son premier jeu, **Hexplore**
 (bientôt sur Steam). Mascotte : **Rouxy**, panda roux non binaire.
 
-Site statique : `index.html`, `styles.css`, `script.js` et des images. Pas de framework, pas d'installation,
+Site statique, **en anglais par défaut, avec une version française** : `index.html` (anglais),
+`fr/index.html` (français), `styles.css` et `script.js` communs, et des images. Pas de framework, pas d'installation,
 pas d'étape de construction. En ligne sur **https://redpawsstudio.github.io/** (GitHub Pages).
 
 ## Où on en est
@@ -17,7 +18,8 @@ pas d'étape de construction. En ligne sur **https://redpawsstudio.github.io/** 
 
 ## Ce que contient la page
 
-1. **Accueil** : logo, slogan « Petites pattes, grandes aventures. », Rouxy sur son rocher face au château.
+1. **Accueil** : logo, slogan (« Small paws, big adventures. » / « Petites pattes, grandes aventures. »),
+   Rouxy sur son rocher face au château.
 2. **Hexplore** : présentation du jeu, deux captures, bouton Steam.
 3. **Le studio** : qui est derrière, Rouxy au repos et ses trois expressions.
 4. **Suivre l'aventure** : cartes Instagram, Steam et contact.
@@ -27,11 +29,14 @@ pas d'étape de construction. En ligne sur **https://redpawsstudio.github.io/** 
 | Je veux changer… | Fichier |
 | --- | --- |
 | Un lien (Steam, Instagram, Gmail) | `script.js`, l'objet `LIENS` tout en haut (voir plus bas) |
-| Un texte | `index.html` (chaque section est annoncée par un commentaire `<!-- 1. Accueil -->`, etc.) |
+| Un texte | `index.html` (anglais) **et** `fr/index.html` (français) : toujours modifier les deux ; chaque section est annoncée par un commentaire `<!-- 1. Accueil -->`, etc. |
+| Un texte « bientôt » du bouton Steam | l'attribut `data-soon` dans chaque page (le script le lit dans la langue de la page) |
 | Une couleur, une police | `styles.css`, les variables de `:root` tout en haut |
 | Une image | voir « Images » plus bas |
 
-Pour voir le résultat : ouvrir `index.html` dans un navigateur (double-clic). Les polices viennent de
+Pour voir le résultat : ouvrir `index.html` ou `fr/index.html` dans un navigateur (double-clic). Le bouton
+EN / FR en haut à droite passe d'une langue à l'autre ; les deux pages se déclarent l'une l'autre
+(`hreflang`) pour les moteurs de recherche. Les polices viennent de
 Google Fonts et demandent une connexion internet.
 
 **Rouxy est non binaire** : dans les textes, pas d'accord au masculin ni au féminin pour Rouxy (plutôt
@@ -50,22 +55,23 @@ En haut de `script.js` :
 ## Images
 
 Le site n'utilise que des **WebP** (`assets/img/`), 5 fois plus légers que les PNG. Les versions **PNG**,
-pour Instagram, Steam, les vidéos ou l'impression, sont dans `../images_png/`. Ce dossier est hors du dépôt
+pour Instagram, Steam, les vidéos ou l'impression, sont dans `../marque/images/`. Ce dossier est hors du dépôt
 et n'existe que sur l'ordinateur.
 
 | Fichier du site | Ce que c'est | Origine |
 | --- | --- | --- |
-| `hero.webp` | Rouxy sur son rocher (accueil) | `images_png/hero.png`, **version corrigée** à la main (deux oreilles) : c'est la référence, ne pas la redécouper du concept |
+| `hero.webp` | Rouxy sur son rocher (accueil) | `marque/images/hero.png`, **version corrigée** à la main (deux oreilles) : c'est la référence, ne pas la redécouper du concept |
 | `logo.webp`, `logo-nav.webp` | Logo, grand et petit, fond transparent | `../Concept.png` |
 | `mascotte.webp` | Rouxy au repos (le studio) | `../Concept.png` |
 | `mascotte-rire.webp`, `mascotte-malice.webp`, `mascotte-surprise.webp` | Les trois expressions, détourées | `../Concept.png` |
 | `panorama.webp` | Coucher de soleil (fond de « Suivre ») | `../Concept.png` |
-| `hexplore-combat.webp`, `hexplore-ile.webp` | Captures du jeu | prises dans Hexplore (Godot) |
+| `hexplore-combat.webp`, `hexplore-ile.webp` | Captures du jeu en français (page française) | prises dans Hexplore (Godot) |
+| `hexplore-combat-en.webp`, `hexplore-ile-en.webp` | Captures du jeu en anglais (page anglaise) | prises dans Hexplore avec `SHOT_LANG=en` |
 | `partage.jpg` | Aperçu quand on partage le lien (Discord, réseaux) | composée à partir du logo et de `hero` |
 | `favicon.png`, `apple-touch-icon.png` | Icônes d'onglet et d'écran d'accueil | `../Concept.png` |
 
 Les illustrations des concepts sont en basse définition, agrandies ×2 ou ×3 : une version haute définition
-au même nom les rendrait plus nettes. Pour remplacer une image : mettre le nouveau PNG dans `images_png/`,
+au même nom les rendrait plus nettes. Pour remplacer une image : mettre le nouveau PNG dans `../marque/images/`,
 puis le convertir en WebP au même nom dans `assets/img/` (ou demander à Claude). Si c'est `hero`, refaire
 aussi `partage.jpg`.
 

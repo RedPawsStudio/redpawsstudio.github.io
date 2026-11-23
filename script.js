@@ -1,5 +1,6 @@
 /* ===================================================================
-   LIENS DU STUDIO : le seul endroit à modifier.
+   LIENS DU STUDIO : le seul endroit à modifier (vaut pour les deux langues,
+   index.html en anglais et fr/index.html en français).
    - steam     : l'URL de la page Steam d'Hexplore (vide tant qu'elle
                  n'existe pas : les boutons Steam mènent alors à Instagram).
    - instagram : le compte (le pseudo affiché en est déduit).
@@ -38,7 +39,7 @@ const LIENS = {
         el.href = "#hexplore";                       // l'icône de l'en-tête reste sur la page
       } else {
         // Pas encore de page Steam : les boutons mènent à Instagram, avec un texte honnête
-        el.href = LIENS.instagram || "#suivre";
+        el.href = LIENS.instagram || "#follow";
         if (LIENS.instagram) { el.target = "_blank"; el.rel = "noopener"; }
         const label = el.querySelector("[data-label]");
         if (label && el.dataset.soon) {
@@ -46,7 +47,7 @@ const LIENS = {
           el.querySelector("svg use")?.setAttribute("href", "#i-instagram");     // …et le logo suivent
         }
         const soon = el.querySelector("[data-soon-label]");
-        if (soon) soon.textContent = "Page à venir : suivre sur Instagram";
+        if (soon && soon.dataset.soon) soon.textContent = soon.dataset.soon;      // texte dans la langue de la page
       }
     }
   });
