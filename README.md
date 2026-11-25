@@ -63,7 +63,7 @@ et n'existe que sur l'ordinateur.
 | `mascotte-v2.webp` | Rouxy en gros plan, section « Le studio » | recadrage de `hero-v2.png` |
 | `rouxy-rire.webp`, `rouxy-content.webp`, `rouxy-surprise.webp` | Trois têtes **animées** de Rouxy (section « Le studio ») | `../marque/rouxy/v2/`, réduites à 200 px |
 | `logo.webp`, `logo-nav.webp` | Logo, grand et petit, fond transparent | `../marque/concepts/Concept.png` |
-| `panorama.webp` | Coucher de soleil (fond de « Suivre ») | `../marque/concepts/Concept.png` |
+| `panorama-v2.webp` | Coucher de soleil, le nouveau Rouxy de dos (fond de « Suivre »), redessiné par Gemini en 1376 × 768 | `../marque/images/panorama-v2.png` |
 | `hexplore-combat.webp`, `hexplore-ile.webp` | Captures du jeu en français (page française) | prises dans Hexplore (Godot) |
 | `hexplore-combat-en.webp`, `hexplore-ile-en.webp` | Captures du jeu en anglais (page anglaise) | prises dans Hexplore avec `SHOT_LANG=en` |
 | `partage.jpg` | Aperçu quand on partage le lien (Discord, réseaux) | logo + `hero-v2.png` |
