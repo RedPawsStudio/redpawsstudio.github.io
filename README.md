@@ -59,15 +59,16 @@ et n'existe que sur l'ordinateur.
 
 | Fichier du site | Ce que c'est | Origine |
 | --- | --- | --- |
-| `hero.webp` | Rouxy sur son rocher (accueil) | `marque/images/hero.png`, **version corrigée** à la main (deux oreilles) : c'est la référence, ne pas la redécouper du concept |
-| `logo.webp`, `logo-nav.webp` | Logo, grand et petit, fond transparent | `../Concept.png` |
-| `mascotte.webp` | Rouxy au repos (le studio) | `../Concept.png` |
-| `mascotte-rire.webp`, `mascotte-malice.webp`, `mascotte-surprise.webp` | Les trois expressions, détourées | `../Concept.png` |
-| `panorama.webp` | Coucher de soleil (fond de « Suivre ») | `../Concept.png` |
+| `hero-v2.webp` | Le nouveau Rouxy (vrai panda roux) face au château, à l'accueil | `../marque/images/hero-v2.png` (Gemini, 25/11/2026) |
+| `mascotte-v2.webp` | Rouxy en gros plan, section « Le studio » | recadrage de `hero-v2.png` |
+| `rouxy-rire.webp`, `rouxy-content.webp`, `rouxy-surprise.webp` | Trois têtes **animées** de Rouxy (section « Le studio ») | `../marque/rouxy/v2/`, réduites à 200 px |
+| `logo.webp`, `logo-nav.webp` | Logo, grand et petit, fond transparent | `../marque/concepts/Concept.png` |
+| `panorama.webp` | Coucher de soleil (fond de « Suivre ») | `../marque/concepts/Concept.png` |
 | `hexplore-combat.webp`, `hexplore-ile.webp` | Captures du jeu en français (page française) | prises dans Hexplore (Godot) |
 | `hexplore-combat-en.webp`, `hexplore-ile-en.webp` | Captures du jeu en anglais (page anglaise) | prises dans Hexplore avec `SHOT_LANG=en` |
-| `partage.jpg` | Aperçu quand on partage le lien (Discord, réseaux) | composée à partir du logo et de `hero` |
-| `favicon.png`, `apple-touch-icon.png` | Icônes d'onglet et d'écran d'accueil | `../Concept.png` |
+| `partage.jpg` | Aperçu quand on partage le lien (Discord, réseaux) | logo + `hero-v2.png` |
+| `favicon.png`, `apple-touch-icon.png` | Icônes d'onglet et d'écran d'accueil | `../marque/concepts/Concept.png` |
+| `hero.webp`, `mascotte*.webp` | Ancien Rouxy, plus utilisé par les pages (gardé en archive) | — |
 
 Les illustrations des concepts sont en basse définition, agrandies ×2 ou ×3 : une version haute définition
 au même nom les rendrait plus nettes. Pour remplacer une image : mettre le nouveau PNG dans `../marque/images/`,
